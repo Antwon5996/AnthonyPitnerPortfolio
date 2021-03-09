@@ -3,29 +3,6 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-#sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float:left;
-    font-size: 30px;
-    padding-right: 100px;
-    padding-top: 25%;
-    width:25%;
-    height: auto;
-    text-align: right;
-    border: solid blueviolet;
-}
-
-#sidebar ul{
-    display: flex;
-    border:solid black;
-    flex-direction:column;
-    list-style: none;
-    padding: 100%;
-    float:left;
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -33,49 +10,112 @@ header{
     font-size: 30px;
     padding: 20px;
     background-color: black;
-    border-bottom: solid;
-    border-bottom-color: red;
     color:white;
 }
+
 nav{
-    display:flex;
-    flex-wrap: wrap;
-    float: right;
-    position:relative;
-    text-align: right;
     font-size: 20px;
     color:white;
     margin: 10px;
 }
 
 nav a{
+    justify-content: space-between;
     padding: 10px 10px;
+    text-decoration: none;
 }
 
-div{
-  float:left;
-  width: 75%;
+nav a:before{
+    color: white;
+}
+
+nav a:visited {
+    color: cyan;
+}
+
+nav a:hover{
+    color: crimson;
+}
+.container{
+    display:flex;
+}
+
+.box1{
+    justify-content: flex-end;
+    text-align: right;
+    padding-top: 15vh;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    width: 25%;
+
+}
+
+#box2{
+    justify-content: flex-end;
+    text-align: right;
+    padding-top: 15vh;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    width: 25%;
+    height: 100%;
 }
 
 #AboutMe{
-    float:right;
+    display:flex;
+    justify-content: flex-start;
     text-align: center;
-    border:solid red;
+    width: 75%;
 }
 
 #AboutMe img{
     border: solid;
-    border-color:red;
-    margin: 10px 20px;
-    float: left;
+    margin: 10px 0px;
+    width: 25%;
+}
+
+#AboutMe p{
+    align-self: center;
 }
 
 #Work{
+    display:flex;
+    flex-direction: column;
+    width: 75%;
 }
 
-#Resume{
-
+#headerImg img{
+    width: 100%;
+    border: solid cyan;
+    height: fit-content;
 }
+
+#headerImg p{
+    background-color: cyan;
+    padding: 10px;
+    margin-top: 100px;
+    position: absolute;
+    font-size: 30px;
+}
+ 
+.smallImg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: solid black;
+    justify-content: space-around;
+}
+
+.smallImg img{
+    border: solid cyan;
+}
+
+ .smallImg p{
+    font-size: 30px;
+    background-color: cyan;
+    position: absolute;
+} 
 
 #Contact{
     width:100%;
@@ -89,16 +129,16 @@ div{
     list-style: none;
     font-size: 25px;
     background-color: black;
+    border-top: solid black;
 }
+
 @media screen and (max-width: 992px) {
 
   }
   
-  /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
   }
   
-  /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
   
   }
